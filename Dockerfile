@@ -21,4 +21,8 @@ RUN rustup update
 
 RUN echo "export RUST_SRC_PATH=$(rustc --print sysroot)/lib/rustlib/src/rust/src" >> ~/.zshrc
 
-RUN vim -E -u NONE -S ~/.vim/vimrcs/plugins.vim +PlugInstall +qall > /dev/null
+RUN vim -u NONE -S ~/.vim/vimrcs/plugins.vim +PlugInstall +qall > /dev/null
+
+ENV SHELL /usr/bin/zsh
+
+ENTRYPOINT zsh

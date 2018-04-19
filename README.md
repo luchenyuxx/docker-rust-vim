@@ -1,5 +1,10 @@
 # A Vim Develop Environment For Rust.
 
+- Syntax hightlight, syntax check
+- Indention
+- Autocomplete
+- Go to definition
+
 # Base Docker Image
 
 rust:latest
